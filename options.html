@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cài đặt Russian Helper</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 20px; max-width: 600px; margin: auto; background-color: #f9f9f9; }
+        h1 { color: #333; }
+        .container { background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        label { font-weight: bold; display: block; margin-bottom: 8px; }
+        input[type="text"] { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-size: 14px; box-sizing: border-box; }
+        button { background-color: #1a73e8; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; margin-top: 15px; }
+        button:hover { background-color: #1565c0; }
+        #status { margin-top: 15px; font-weight: bold; color: green; }
+        .instructions { margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; }
+        .instructions a { color: #1a73e8; }
+        .instructions li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cài đặt API Key</h1>
+        <p>Vui lòng nhập API Key của bạn từ Google AI Studio để sử dụng tính năng phân tích bằng AI.</p>
+        
+        <label for="apiKey">Gemini API Key:</label>
+        <input type="text" id="apiKey" placeholder="Dán API Key của bạn vào đây">
+        
+        <button id="save">Lưu lại</button>
+        <div id="status"></div>
+
+        <div class="instructions">
+            <h2>Cách lấy API Key:</h2>
+            <ol>
+                <li>Truy cập trang <a href="https://aistudio.google.com/" target="_blank">Google AI Studio</a> và đăng nhập bằng tài khoản Google.</li>
+                <li>Nhấp vào nút <strong>"Get API key"</strong>.</li>
+                <li>Chọn <strong>"Create API key in new project"</strong>.</li>
+                <li>Sao chép chuỗi API Key hiện ra và dán vào ô ở trên.</li>
+            </ol>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Container chính của bong bóng */
+#rh-bubble-root {
+  /* Định nghĩa biến màu để dễ dàng thay đổi */
+  --rh-bg: #ffffff;
+  --rh-text: #202124;
+  --rh-primary: #1a73e8;
+  --rh-secondary-text: #5f6368;
+  --rh-border: #dfe1e5;
+  --rh-bg-alt: #f8f9fa;
+
+  position: absolute;
+  z-index: 2147483647;
+  background-color: var(--rh-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border: 1px solid var(--rh-border);
+  min-width: 300px;
+  max-width: 450px;
+  display: none;
+  max-height: 50vh;
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: var(--rh-text);
+}
+
+/* Phần đệm bên trong bong bóng */
+#rh-bubble-root .rh-bubble-padding {
+    padding: 16px;
+}
+
+/* Header */
+#rh-bubble-root .rh-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+#rh-bubble-root .rh-title-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  color: var(--rh-secondary-text);
+}
+#rh-bubble-root #rh-close-btn {
+  background: none; border: none; cursor: pointer; padding: 0; opacity: 0.6;
+}
+#rh-bubble-root #rh-close-btn:hover { opacity: 1; }
+
+/* Nội dung tra cứu */
+#rh-bubble-root .rh-content-section {
+  border-top: 1px solid var(--rh-border);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+#rh-bubble-root .rh-word-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+#rh-bubble-root .rh-phonetic {
+  font-style: italic;
+  color: var(--rh-secondary-text);
+  margin-bottom: 12px;
+}
+#rh-bubble-root .rh-play-btn {
+  background: none; border: none; cursor: pointer; vertical-align: middle; padding: 0 5px;
+}
+#rh-bubble-root .rh-meaning {
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+#rh-bubble-root .rh-external-links a {
+  display: block; padding: 8px; background-color: var(--rh-bg-alt); text-decoration: none;
+  color: var(--rh-primary); border-radius: 5px; margin-bottom: 8px; text-align: center;
+  font-weight: bold;
+}
+#rh-bubble-root .rh-external-links a:hover { background-color: #e8eaed; }
+
+/* AI Section */
+#rh-bubble-root .rh-ai-result {
+  background-color: var(--rh-bg-alt);
+  padding: 12px; border-radius: 8px; line-height: 1.6; white-space: pre-wrap;
+}
