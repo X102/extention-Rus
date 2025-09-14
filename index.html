@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách Quyền riêng tư - Russian Helper- Tra Nhanh Từ Tiếng Nga</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eaecee;
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #555;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chính sách Quyền riêng tư cho Tiện ích "Russian Helper"</h1>
+        <p><em>Cập nhật lần cuối: 14 tháng 9, 2025</em></p>
+
+        <p>Cảm ơn bạn đã sử dụng tiện ích "Russian Helper" ("Tiện ích"). Chúng tôi cam kết bảo vệ sự riêng tư của bạn. Chính sách này giải thích rõ những dữ liệu mà Tiện ích xử lý và cách chúng được sử dụng.</p>
+
+        <h2>1. Dữ liệu được xử lý</h2>
+        <p>Tiện ích này được thiết kế với sự ưu tiên cao nhất cho quyền riêng tư. Chúng tôi không thu thập bất kỳ dữ liệu cá nhân nào có thể định danh bạn.</p>
+        <ul>
+            <li>
+                <strong>Văn bản được chọn (Selected Text):</strong> Khi bạn bôi đen một từ hoặc cụm từ trên trang web, văn bản đó sẽ được gửi đến API của Google Dịch (để lấy nghĩa) và API của Google Gemini (để phân tích chi tiết). Dữ liệu này chỉ được xử lý tạm thời và không được lưu trữ ở bất kỳ đâu sau khi bạn tra cứu xong.
+            </li>
+            <li>
+                <strong>API Key của người dùng (User's API Key):</strong> API Key Google Gemini do bạn cung cấp được lưu trữ an toàn bằng `chrome.storage.sync`. Điều này có nghĩa là nó chỉ được lưu trên trình duyệt của bạn và được đồng bộ hóa giữa các thiết bị mà bạn đã đăng nhập vào Chrome. Key này không bao giờ được gửi đến bất kỳ máy chủ nào của chúng tôi và chỉ được dùng để xác thực các yêu cầu gửi đến máy chủ của Google.
+            </li>
+        </ul>
+
+        <h2>2. Dữ liệu KHÔNG được thu thập</h2>
+        <p>Chúng tôi cam kết **KHÔNG** thu thập bất kỳ loại dữ liệu nào sau đây, cả ở hiện tại và trong tương lai:</p>
+        <ul>
+            <li>Dữ liệu nhận dạng cá nhân (Tên, email, địa chỉ, v.v.).</li>
+            <li>Lịch sử duyệt web.</li>
+            <li>Dữ liệu cookie.</li>
+            <li>Dữ liệu vị trí.</li>
+            <li>Bất kỳ dữ liệu nào khác ngoài văn bản bạn chủ động chọn và API key bạn cung cấp.</li>
+        </ul>
+
+        <h2>3. Việc sử dụng các quyền (Permissions)</h2>
+        <ul>
+            <li>
+                <strong>storage:</strong> Được yêu cầu để lưu trữ API Key của bạn một cách an toàn trên trình duyệt.
+            </li>
+            <li>
+                <strong>offscreen:</strong> Được yêu cầu để tính năng "Nghe phát âm" có thể hoạt động ổn định trên mọi trang web, tránh bị chặn bởi Chính sách Bảo mật Nội dung (CSP) của trang web.
+            </li>
+            <li>
+                <strong>host_permissions (`*://translate.googleapis.com/*`):</strong> Được yêu cầu để gửi yêu cầu đến máy chủ của Google Dịch nhằm lấy bản dịch và file âm thanh phát âm.
+            </li>
+        </ul>
+
+        <h2>4. Kế hoạch trong tương lai</h2>
+        <p>Chúng tôi không có kế hoạch thu thập thêm bất kỳ loại dữ liệu nào khác trong tương lai. Nếu có bất kỳ thay đổi nào, chúng tôi sẽ cập nhật Chính sách Quyền riêng tư này một cách minh bạch.</p>
+
+        <h2>5. Liên hệ</h2>
+        <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách này, vui lòng liên hệ với chúng tôi.</p>
+        
+        <div class="footer">
+            <p>&copy; 2025 Russian Helper</p>
+        </div>
+    </div>
+</body>
+</html>
